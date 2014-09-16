@@ -1,0 +1,154 @@
+		/* load google font */
+
+		@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+
+		html {
+			-webkit-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			font-family: 'PT Sans';
+			text-size-adjust: 100%
+			font-size: 18px;
+			line-height: 24px;
+
+}
+
+		h1 {
+			font-size: 10em;
+			font-weight: bold;
+			font-height: 15em;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			text-align: center;
+			padding-top: 22.5%;
+
+}
+
+		h2 {
+			font-size: 5em;
+			color: #FFFFFF;
+			text-align: center;
+			padding-top: 20%;
+}
+
+		h3 {
+			font-size: 42px;
+			font-weight: bold;
+     			color: #FFFFFF;
+			text-transform: uppercase;
+			text-align: center;
+			padding-top: 35%;
+}
+
+		p {
+			color: #FFFFFF;
+			text-align: left;
+			padding-top: 85%;
+			padding-bot: 100%;
+}
+		a {
+			color: #FFFFFF;
+}
+
+
+
+/* changes link hover color to grey */
+
+		a:hover {
+			color: #707070;
+}
+
+		#header{
+			position: relative;
+			margin-top: 20%;
+}
+
+		#background{
+			position: fixed;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			width: 100%;
+			z-index: -1;
+}
+
+		html, body {
+			positoin: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 75%;
+			max-width: 800px;
+}
+
+
+/* limits the page from going super widw */
+
+		#content{
+			max-width: 640px;
+}
+
+
+/* media query. Depending on screen size, the following style gets applied */
+
+	@media all and (min-width: 900px) {
+		h1{
+			font-size: 10em;
+	}
+		h3{
+			font-size: 30px;
+			font-height: 30px;
+	}
+		p{
+			margin-bottom: 15%;
+	}
+}
+
+	@media all and (max-width: 899px) and (min-width: 630px) {
+		h1{
+			color: "white";
+			font-size: 6em;
+			font-height: 6em;
+	}
+		h2{
+			font-size: 4em;
+	}
+		h3{
+			font-size: 25px;
+			font-height:25px;
+	}
+		p{
+			margin-bottom: 25%;
+	}
+}
+
+	@media all and (max-width: 629px) and (min-width: 250px) {
+		html, body {
+			width: 85%;
+	}
+		#header{
+			position: relative;
+			margin-top: 0;
+	}
+
+		h1{
+			font-size: 3.5em;
+			font-height: 3.5em;
+			padding-top: 35%;
+	}
+		h2{
+			font-size: 2em;
+	}
+		h3{
+			font-size: 14px;
+			font-height: 14px;
+	}
+		p{
+			font-size: 12px;
+			margin-bottom: 100%;
+	}
+}
